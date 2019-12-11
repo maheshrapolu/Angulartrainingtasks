@@ -1,0 +1,45 @@
+<h2>Upload photo and show the uploaded photo in image in angular form</h2><br><br>
+
+
+
+
+<form >
+    
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text"
+               class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text"
+               class="form-control">
+      </div>
+   
+  
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email"
+             class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password"
+             class="form-control">
+    </div><br>
+    <div>
+        <span style="color:red;" *ngIf="message">{{message}}</span>
+        <input #file type="file" accept='image/*' (change)="preview(file.files)" />
+        <img [src]="imgURL" height="200" *ngIf="imgURL">
+        
+    </div><br>
+  
+    <div class="form-group">
+      <label>Language</label>
+      <select class="form-control">
+        <option value="">Please select a language</option>
+      </select>
+    </div>
+  </form>

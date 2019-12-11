@@ -1,0 +1,15 @@
+form{
+    width: 320px;
+    margin: 1px auto;
+  
+}
+
+button{
+    font-size: 15px;
+}
+label{
+    padding-left: 80px;
+}
+.error{
+    color: red;
+}

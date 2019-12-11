@@ -1,0 +1,19 @@
+<h2>Get a date from user using calendar where date should not exceed this current year</h2>
+<div class="row">
+    <div class="col-xs-12 col-12 col-sm-6 col-md-4 form-group">
+      <input class="form-control"
+             placeholder="Datepicker"
+             ngModel
+             bsDatepicker
+             [minDate]="minDate"
+             [maxDate]="maxDate">
+    </div>
+    <div class="col-xs-12 col-12 col-sm-6 col-md-4 form-group">
+      <input class="form-control"
+             placeholder="Daterangepicker"
+             ngModel
+             bsDaterangepicker
+             [minDate]="minDate"
+             [maxDate]="maxDate">
+    </div>
+  </div>

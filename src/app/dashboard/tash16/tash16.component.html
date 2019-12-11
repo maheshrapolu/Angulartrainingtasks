@@ -1,0 +1,25 @@
+<h2>after login if time exceeds 30 minutes ask user to again login</h2>
+<div class="text-center">
+    <img src="https://media.licdn.com/dms/image/C560BAQFWL6FZ_JsOsg/company-logo_200_200/0?e=2159024400&v=beta&t=T3wZVo65meOdBlUdmYYhZHAIWTbgqUiVaUsuwyrsXwE" class="logo">
+</div>  
+    <form  [formGroup]="form" class="form-group">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter username" formControlName="username">
+   
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" placeholder="Enter Password"formControlName="password">
+
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-secondary" (click)="su()" >Login</button>&nbsp;
+        <button type="submit" class="btn btn-secondary" (click)="onLogout()" >Logout</button>
+        <label><a>Lost your password?</a></label>
+        <hr>
+        <div style="text-align:center;">
+            <a>Create Account</a>{{token}}
+        </div>
+    </div>
+
+
+</form>

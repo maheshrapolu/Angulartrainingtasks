@@ -1,0 +1,43 @@
+<h2>Get details from db.json and depending on the gender put all male records in 1 div and female records in another div</h2>
+
+<div class="container">            
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th>Female</th>
+        </tr>
+      </thead>
+      <tbody>
+<div> 
+    <tr *ngFor="let s of data">
+          
+          <td>{{s.female}}</td>
+         
+        </tr>
+    </div>  
+
+      </tbody>
+
+    </table>
+  </div>
+  
+<div class="container">            
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Male</th>
+            </tr>
+          </thead>
+          <tbody>
+    <div> 
+        <tr *ngFor="let s of data">
+              <td>{{s.male}}</td>
+             
+             
+            </tr>
+        </div>  
+    
+          </tbody>
+          
+        </table>
+      </div>

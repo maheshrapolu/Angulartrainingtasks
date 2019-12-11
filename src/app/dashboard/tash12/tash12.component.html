@@ -1,0 +1,18 @@
+<h2>.If country selected is INDIA in one select box show all the states of INDIA in another select box.If US show the states of U.S</h2>
+<br><br><br>
+<label>Country</label>
+<div  >
+	<select placeholder="Phantasyland" (change)="changeCountry($event.target.value)">
+        <option  disabled >Select </option>
+        <option *ngFor ="let count of countryList">{{count.name}} </option>
+    </select>
+</div>
+
+
+<label>City</label>
+<div title="Please select the city that the customer is primarily to be served from.">
+	<select placeholder="Anycity">
+            <option  disabled >Select </option>
+        <option *ngFor ="let city of cities">{{city}} </option>
+  </select>
+</div>

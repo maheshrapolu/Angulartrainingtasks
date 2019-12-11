@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fname": "mahesh",
+      "lname": "rapolu"
+    },
+    {
+      "id": 2,
+      "fname": "naveen",
+      "lname": "challa"
+    }
+  ],
+  "comments": [
+    {
+      "male": "Saikumar",
+      "female": "Chathynaya"
+    },
+    {
+      "male": "VenuGopal",
+      "female": "Nelimma"
+    },
+    {
+      "male": "Mahesh",
+      "female": "Nikitha"
+    },
+    {
+      "male": "Akram",
+      "female": "Sravani"
+    },
+    {
+      "male": "naveen",
+      "female": "roja"
+    },
+    {
+      "male": "Nagaraj",
+      "female": "xyzlady"
+    },
+    {
+      "male": "Aditya",
+      "female": "layanya"
+    },
+    {
+      "male": "Saikumar",
+      "female": "Chathynaya"
+    },
+    {
+      "male": "VenuGopal",
+      "female": "Nelimma"
+    },
+    {
+      "male": "Mahesh",
+      "female": "Nikitha"
+    },
+    {
+      "male": "Akram",
+      "female": "Sravani"
+    },
+    {
+      "male": "naveen",
+      "female": "roja"
+    },
+    {
+      "male": "Nagaraj",
+      "female": "xyzlady"
+    },
+    {
+      "male": "Aditya",
+      "female": "layanya"
+    },
+    {
+      "male": "Rk",
+      "female": "****"
+    }
+  ]
+}

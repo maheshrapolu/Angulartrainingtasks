@@ -1,0 +1,31 @@
+<h2>while adding new data to record,it should be displayed in the first row of the table</h2><br><br>
+<div class="container">
+    
+    <form [formGroup]="form" class="form-group">
+        <label><b>Firstname:</b></label>
+        <input type="text" formControlName="fname" class="form-control"><br>
+        <label><b>Lastname:</b></label>
+        <input type="text" formControlName="lname" class="form-control"><br>
+        <button type="submit" (click)="su()" class="btn btn-primary">Submit</button>&nbsp;
+        <button type="submit" (click)="up()" class="btn btn-primary">Update</button>
+    </form><br>
+    <table class="table" border="1">
+        <tr>
+            <th>Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let d of fdata ">
+            <td>{{d.id}}</td>
+            <td>{{d.fname}}</td>
+            <td>{{d.lname}}</td>
+            <td>
+                    <button type="submit" (click)="ed(d)" class="btn btn-primary">Edit</button>&nbsp;
+                    <button type="submit" (click)="del(d)" class="btn btn-primary">Delete</button>
+            </td>
+        </tr>
+    </table>
+    </div>
+    
+    

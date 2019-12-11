@@ -1,0 +1,12 @@
+<h2>Based on login gender ,display icon picture</h2><br><br><br>
+<p-radioButton name="groupname" [value]="Part1" label="male" (onClick)="makeP1True()"></p-radioButton>
+<div *ngIf="part1">
+    <i class="fas fa-male"></i>
+ </div>
+<p-radioButton name="groupname" [value]="Part2" label="female" (onClick)="makeP2True()"></p-radioButton>
+
+
+ 
+<div *ngIf="part2">
+    <i class="fas fa-female"></i>
+</div>

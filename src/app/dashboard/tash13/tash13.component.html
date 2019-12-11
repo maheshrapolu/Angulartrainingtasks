@@ -1,0 +1,28 @@
+<h2>Display details of db.json in paginator</h2><br><br>
+
+
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <td>EmpNo</td>
+                <td>UserId</td>
+                <td>Emptitle</td>
+                <td>Body</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees | paginate: { id: 'listing_pagination',
+itemsPerPage: 8,currentPage: page,totalItems: totalRec }">
+                <td>{{emp.id}}</td>
+                <td>{{emp.userId}}</td>
+                <td>{{emp.title}}</td>
+                <td>{{emp.body}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <pagination-controls id="listing_pagination" maxSize="9" directionLinks="true" (pageChange)="page = $event">
+        </pagination-controls>
+    </div>
+</div>

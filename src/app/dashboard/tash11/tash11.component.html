@@ -1,0 +1,20 @@
+<h2>drag and drop the image from the local sysytem to input text box</h2><br><br><br>
+
+
+<div  id="div1" 
+      (drop)="drop($event)" 
+      (dragover)="allowDrop($event)">
+
+      <img 
+      src="https://media.licdn.com/dms/image/C560BAQFWL6FZ_JsOsg/company-logo_200_200/0?e=2159024400&v=beta&t=T3wZVo65meOdBlUdmYYhZHAIWTbgqUiVaUsuwyrsXwE" 
+      draggable="true" 
+      (dragstart)="drag($event)" 
+      id="drag1"
+      width="150" 
+      height="100">
+</div>
+
+<div id="div2" 
+  (drop)="drop($event)" 
+  (dragover)="allowDrop($event)">
+</div>
