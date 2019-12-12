@@ -35,6 +35,7 @@ import { ReversePipe } from './reverse.pipe';
 import { HomeComponent } from './dashboard/tash16/home/home.component';
 import { TaskComponent } from './dashboard/task/task.component';
 import { TreeModule } from 'angular-tree-component';
+import { AutoLogoutService } from './auto-logout.service';
 //import { AuthGuard } from './auth.guard';
 
 
@@ -77,10 +78,11 @@ import { TreeModule } from 'angular-tree-component';
     RadioButtonModule,
     NgxPaginationModule,
     AvatarModule,
-    TreeModule.forRoot()
+    TreeModule.forRoot(),
+    
     
   ],
-  providers: [NgxImageCompressService],
+  providers: [NgxImageCompressService,AutoLogoutService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
